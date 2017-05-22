@@ -1,0 +1,20 @@
+<arpgmp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ipv4-arp-cfg">
+  <vrf>
+    <vrf-name>default</vrf-name>
+    <entries>
+      <entry>
+        <address>172.16.0.1</address>
+        <encapsulation>arpa</encapsulation>
+        <entry-type>static</entry-type>
+        <mac-address>52:54:00:28:89:88</mac-address>
+      </entry>
+      <entry>
+        <address>172.16.0.4</address>
+        <encapsulation>arpa</encapsulation>
+        <entry-type>static</entry-type>
+        <mac-address>52:54:00:7d:8f:8f</mac-address>
+      </entry>
+    </entries>
+  </vrf>
+</arpgmp>
+

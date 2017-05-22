@@ -1,0 +1,6 @@
+<arp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ipv4-arp-cfg">
+  <inner-cos>4</inner-cos>
+  <max-entries>1000</max-entries>
+  <outer-cos>5</outer-cos>
+</arp>
+
