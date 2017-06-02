@@ -1,0 +1,12 @@
+<syslog-service xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-infra-syslog-cfg">
+  <timestamps>
+    <log>
+      <log-datetime>
+        <log-datetime-value>
+          <time-stamp-value>enable</time-stamp-value>
+        </log-datetime-value>
+      </log-datetime>
+    </log>
+  </timestamps>
+</syslog-service>
+
