@@ -1,0 +1,5 @@
+<ipv4-acl-and-prefix-list xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ipv4-acl-cfg">
+  <log-update>
+    <rate>10</rate>
+  </log-update>
+</ipv4-acl-and-prefix-list>

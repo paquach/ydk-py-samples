@@ -1,0 +1,19 @@
+<ipv4-acl-and-prefix-list xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ipv4-acl-cfg">
+  <prefixes>
+    <prefix>
+      <prefix-list-name>PREFIX-LIST1</prefix-list-name>
+      <prefix-list-entries>
+        <prefix-list-entry>
+          <sequence-number>10</sequence-number>
+          <remark>allow single prefix</remark>
+        </prefix-list-entry>
+        <prefix-list-entry>
+          <sequence-number>20</sequence-number>
+          <grant>permit</grant>
+          <netmask>255.255.0.0</netmask>
+          <prefix>172.16.0.0</prefix>
+        </prefix-list-entry>
+      </prefix-list-entries>
+    </prefix>
+  </prefixes>
+</ipv4-acl-and-prefix-list>
