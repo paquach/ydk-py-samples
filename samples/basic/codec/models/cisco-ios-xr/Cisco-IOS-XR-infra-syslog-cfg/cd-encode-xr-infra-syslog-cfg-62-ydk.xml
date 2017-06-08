@@ -1,0 +1,35 @@
+<syslog xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-infra-syslog-cfg">
+  <correlator xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-infra-correlator-cfg">
+    <buffer-size>65535</buffer-size>
+    <rules>
+      <rule>
+        <name>RULE2</name>
+        <applied-to>
+          <all></all>
+        </applied-to>
+        <non-stateful>
+          <non-root-causes>
+            <non-root-cause>
+              <category>PLATFORM</category>
+              <group>ENVMON</group>
+              <message-code>FAN_CLEAR</message-code>
+            </non-root-cause>
+            <non-root-cause>
+              <category>PLATFORM</category>
+              <group>ENVMON</group>
+              <message-code>FANTRAY_FAIL</message-code>
+            </non-root-cause>
+          </non-root-causes>
+          <root-cause>
+            <category>PLATFORM</category>
+            <group>ENVMON</group>
+            <message-code>FAN_FAIL</message-code>
+          </root-cause>
+          <timeout>3600000</timeout>
+          <timeout-root-cause>360000</timeout-root-cause>
+        </non-stateful>
+      </rule>
+    </rules>
+  </correlator>
+</syslog>
+
