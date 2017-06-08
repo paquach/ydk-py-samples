@@ -1,0 +1,25 @@
+<syslog xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-infra-syslog-cfg">
+  <suppression xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-infra-correlator-cfg">
+    <rules>
+      <rule>
+        <name>RULE1</name>
+        <alarm-causes>
+          <alarm-cause>
+            <category>MGBL</category>
+            <code>DB_COMMIT</code>
+            <group>CONFIG</group>
+          </alarm-cause>
+          <alarm-cause>
+            <category>SECURITY</category>
+            <code>AUTHEN_SUCCESS</code>
+            <group>LOGIN</group>
+          </alarm-cause>
+        </alarm-causes>
+        <applied-to>
+          <all></all>
+        </applied-to>
+      </rule>
+    </rules>
+  </suppression>
+</syslog>
+
