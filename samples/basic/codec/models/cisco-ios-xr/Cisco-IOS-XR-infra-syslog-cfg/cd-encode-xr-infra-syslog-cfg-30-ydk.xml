@@ -1,0 +1,6 @@
+<syslog xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-infra-syslog-cfg">
+  <console-logging>
+    <logging-level>disable</logging-level>
+  </console-logging>
+</syslog>
+
