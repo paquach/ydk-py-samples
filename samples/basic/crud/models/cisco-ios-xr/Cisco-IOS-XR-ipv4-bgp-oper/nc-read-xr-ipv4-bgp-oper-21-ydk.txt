@@ -1,0 +1,22 @@
+BGP router identifier 110.1.1.1, local AS number 100
+BGP generic scan interval 60 secs
+Non-stop routing is enabled
+BGP table state: Active
+Table ID: 0xe0000000    RD version: 10
+BGP main routing table version 10
+BGP NSR Initial initsync version 2 (Reached)
+BGP NSR/ISSU Sync-Group versions 0/0
+BGP scan interval 60 secs
+
+Status codes: s suppressed, d damped, h history, * valid, > best
+i - internal, r RIB-failure, S stale, N Nexthop-discard
+Origin codes: i - IGP, e - EGP, ? - incomplete
+   Network          Next Hop          Metric    LocPrf   Weight  Path
+*>i5.5.5.0/24       200.1.1.1              0       100        0  0 ?  
+*>i14.14.14.0/24    200.1.1.1              0       100        0  0 ?  
+*>i16.16.16.0/24    200.1.1.1              0       100        0  0 ?  
+*> 19.19.19.0/24    0.0.0.0                0       100    32768  0 ?  
+*> 80.1.1.0/24      0.0.0.0                0       100    32768  0 ?  
+*>i192.168.0.5/32   200.1.1.1              0       100        0  0 ?  
+*> 192.168.0.7/32   0.0.0.0                0       100    32768  0 ?  
+*>i200.1.1.0/24     200.1.1.1              0       100        0  0 ?

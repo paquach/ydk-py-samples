@@ -1,0 +1,8 @@
+router ospf name
+ router-id 172.16.255.1
+ area areaid
+  interface interface
+  !
+ !
+!
+end

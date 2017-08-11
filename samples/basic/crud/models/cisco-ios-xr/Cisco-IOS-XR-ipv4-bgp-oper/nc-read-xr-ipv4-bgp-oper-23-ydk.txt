@@ -1,0 +1,32 @@
+Total Nexthop Processing
+  Time Spent: 0.0 seconds
+
+Maximum Nexthop Processing
+  Received: 00:00:00 
+  Bestpaths Deleted: 0
+  Bestpaths Changed: 0
+  Time Spent: 0.0 seconds
+
+Last Notification Processing
+  Received: 03:44:52
+  Time Spent: 0.0 seconds
+
+Gateway Address Family: IPv4 unicast
+Table ID: 0xe0000000
+Nexthop Count: 3
+Critical Trigger Delay: 3000 ms
+Non-critical Trigger Delay: 10000 ms
+
+Nexthop Version: 1, RIB version: 1
+EPE Table Version: 1, EPE Label version: 1
+EPE Downloaded Version: 1, EPE Standby version: 0
+
+Status Codes: R/UR Reachable/Unreachable
+              C/NC Connected/Not-connected
+              L/NL Local/Non-local
+              PR   Pending Registration
+              I    Invalid (Policy drop)
+
+Next Hop         Status              Metric Tbl-ID       Notf LastRIBEvent      RefCount
+80.1.1.2         [R][C][NL]          0      0xe0000000   1/0  03:44:49(Cri)     0/3     
+200.1.1.1        [R][NC][NL]         2      0xe0000000   0/0  03:42:54(Reg)     5/67 

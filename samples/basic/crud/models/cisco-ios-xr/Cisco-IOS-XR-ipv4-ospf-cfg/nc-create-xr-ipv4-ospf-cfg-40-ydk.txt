@@ -1,0 +1,4 @@
+router ospf name
+  distribute link-state
+!
+end

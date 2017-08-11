@@ -1,0 +1,4 @@
+route-policy name
+  status
+end-policy
+!

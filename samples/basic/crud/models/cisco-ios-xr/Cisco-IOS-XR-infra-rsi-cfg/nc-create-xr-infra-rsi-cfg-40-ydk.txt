@@ -1,0 +1,6 @@
+vrf name
+ address-family af saf
+  direction route-target
+   as
+!
+end

@@ -1,0 +1,109 @@
+router bgp 100
+ bgp router-id 10.1.1.1
+ address-family ipv4 unicast
+  redistribute connected route-policy passall
+ !
+ address-family vpnv4 unicast
+  vrf all
+   label mode per-ce
+  !
+ !
+ address-family ipv6 unicast
+  redistribute connected route-policy passall
+  redistribute static
+ !
+ address-family vpnv6 unicast
+  vrf all
+   label mode per-ce
+  !
+ !
+ address-family l2vpn evpn
+ !
+ address-family link-state link-state
+ !
+ neighbor-group ce
+  remote-as 200
+  address-family ipv4 unicast
+   route-policy passall in
+   route-policy passall out
+  !
+ !
+ neighbor 3001::5
+  remote-as 100
+  address-family ipv4 unicast
+   route-policy passall in
+   route-policy passall out
+  !
+  address-family ipv6 unicast
+   route-policy passall in
+   route-policy passall out
+  !
+ !
+ neighbor 200.1.1.2
+  remote-as 100
+  address-family ipv4 unicast
+   route-policy passall in
+   route-policy passall out
+  !
+  address-family vpnv4 unicast
+   route-policy passall in
+   route-policy passall out
+  !
+  address-family link-state link-state
+  !
+ !
+ neighbor 2001::108:28:2:1
+  remote-as 1
+  update-source Loopback0
+  address-family ipv6 unicast
+  !
+  address-family link-state link-state
+  !
+ !
+ vrf 1
+  rd 1:1
+  address-family ipv4 unicast
+   redistribute static
+  !
+  neighbor 10.1.1.2
+   use neighbor-group ce
+   address-family ipv4 unicast
+   !
+  !
+ !
+ vrf 2
+  rd 2:2
+  address-family ipv4 unicast
+   redistribute static
+  !
+  address-family ipv6 unicast
+   redistribute static
+  !
+  neighbor 2001::5
+   remote-as 200
+   address-family ipv6 unicast
+    route-policy passall in
+    route-policy passall out
+   !
+  !
+ !
+ vrf 3
+  rd 3:3
+  address-family ipv4 unicast
+   table-policy allow-only-pfxlen-32
+  !
+  neighbor 30.1.1.2
+   use neighbor-group ce
+  !
+ !
+ vrf 4
+  rd 4:4
+  address-family ipv4 unicast
+   table-policy allow-only-pfxlen-32
+  !
+  neighbor 40.1.1.2
+   use neighbor-group ce
+  !
+ !
+!
+end

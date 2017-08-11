@@ -1,0 +1,9 @@
+BGP Sessions:
+Neighbor         Vrf                  Spk    AS   InQ  OutQ  NBRState     NSRState
+80.1.1.2         default                0   100     0     0  Established  None    
+110.1.1.2        1                      0   300     0     0  Idle         None    
+120.1.1.2        2                      0   200     0     0  Idle         None    
+130.1.1.2        3                      0   200     0     0  Idle         None    
+140.1.1.2        4                      0   200     0     0  Idle         None    
+
+Total Neighbor count: 5

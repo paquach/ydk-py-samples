@@ -1,0 +1,23 @@
+router bgp 100
+ bgp router-id 200.1.1.2
+ address-family ipv4 unicast
+ !
+ address-family vpnv4 unicast
+ !
+ neighbor-group rr-client
+  remote-as 100
+  address-family ipv4 unicast
+   route-reflector-client
+  !
+  address-family vpnv4 unicast
+   route-reflector-client
+  !
+ !
+ neighbor 80.1.1.1
+  use neighbor-group rr-client
+ !
+ neighbor 200.1.1.1
+  use neighbor-group rr-client
+ !
+!
+end

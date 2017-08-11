@@ -1,0 +1,5 @@
+router static
+ address-family ipv6 unicast
+  prefix/prefixlen interface
+ !
+!

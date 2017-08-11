@@ -1,0 +1,6 @@
+route-policy allow-only-pfxlen-32
+  if destination in (0.0.0.0/0 eq 32) then
+    pass
+  endif
+end-policy
+!
